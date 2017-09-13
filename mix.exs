@@ -40,7 +40,9 @@ defmodule Sandbox.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      #{:materialize, git: "https://github.com/mistim/ex_materialize", branch: "0.2"}
+      {:materialize, path: "/home/mo/develop/ex_modules/ex_materialize"}
     ]
   end
 
