@@ -19,3 +19,12 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+(function($){
+    $(function(){
+
+        $('.button-collapse').sideNav();
+        $('.slider').slider();
+
+    }); // end of document ready
+})(jQuery); // end of jQuery name space
