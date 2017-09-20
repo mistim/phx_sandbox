@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Matomato Club">
+    <meta name="author" content="Mistim">
 
-    <title>Hello Sandbox!</title>
+    <title>Matomato Club</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
@@ -15,189 +15,15 @@
   <body class="blue-grey-text text-darken-4">
     <div class="promo-bg"></div>
 
-    <div class="navbar-fixed">
-      <nav class="green lighten-2" role="navigation">
-        <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo">Matomato Club</a>
-
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Видео</a></li>
-            <li><a href="#">Связь</a></li>
-          </ul>
-          <!--
-          <div class="nav-wrapper right">
-            <form>
-              <div class="input-field">
-                <input id="search" type="search" required>
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                <i class="material-icons">close</i>
-              </div>
-            </form>
-          </div>
-          -->
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Видео</a></li>
-            <li><a href="#">Связь</a></li>
-          </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
-    </div>
-
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <br>
-        <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src=""> <!-- random image -->
-              <div class="caption right-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="">Here's our small slogan.</h5>
-              </div>
-            </li>
-            <li>
-              <img src=""> <!-- random image -->
-              <div class="caption right-align">
-                <h3>Left Aligned Caption</h3>
-                <h5 class="">Here's our small slogan.</h5>
-              </div>
-            </li>
-            <li>
-              <img src=""> <!-- random image -->
-              <div class="caption right-align">
-                <h3>Right Aligned Caption</h3>
-                <h5 class="">Here's our small slogan.</h5>
-              </div>
-            </li>
-            <li>
-              <img src=""> <!-- random image -->
-              <div class="caption right-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="">Here's our small slogan.</h5>
-              </div>
-            </li>
-            <li>
-              <img src=""> <!-- random image -->
-              <div class="caption right-align">
-                <h3>This is our big Tagline 1!</h3>
-                <h5 class="">Here's our small slogan.</h5>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
+    <%= render("_navbar.html", assigns) %>
+    <%= render("_slider.html", assigns) %>
 
     <div class="container">
-      <div class="section">
+      <%= render @view_module, @view_template, assigns %>
+    </div> <!-- /container -->
 
-        <!--   Icon Section   -->
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-              <h5 class="center">Speeds up development</h5>
-
-              <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-              <h5 class="center">User Experience Focused</h5>
-
-              <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-              <h5 class="center">Easy to work with</h5>
-
-              <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <br><br>
-
-      <div class="section">
-
-      </div>
-    </div>
-
-    <!--<div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
-
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
-
-    </div>--> <!-- /container -->
-
-    <div id="social-block" class="red lighten-2">
-      <div class="container">
-        <div class="row">
-          <div class="col l12 s12 center">
-            <a href=# class="btn-flat white-text no-uppercase">Наш <span class="fw-600">YouTube</span> канал</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="page-footer blue-grey darken-1">
-      <div class="container">
-        <div class="row">
-          <div class="col l4 s12">
-            <div>
-              <img class="footer-img" src="images/svg/design6_png/design133_1.png">
-            </div>
-          </div>
-          <div class="col l4 s12 center">
-            <h5 class="white-text">Settings</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-          <div class="col l4 s12 center">
-            <h5 class="white-text">Connect</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          <div class="grey-text text-lighten-1">
-            © 2017 <a class="orange-text text-lighten-3" href="#">Matomato Club</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <%= render("_social.html", assigns) %>
+    <%= render("_footer.html", assigns) %>
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>

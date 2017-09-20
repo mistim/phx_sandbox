@@ -1,0 +1,45 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <br>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src=""> <!-- random image -->
+          <div class="caption right-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src=""> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src=""> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src=""> <!-- random image -->
+          <div class="caption right-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src=""> <!-- random image -->
+          <div class="caption right-align">
+            <h3>This is our big Tagline 1!</h3>
+            <h5 class="">Here's our small slogan.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

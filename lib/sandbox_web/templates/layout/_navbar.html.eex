@@ -1,0 +1,32 @@
+<!--<div class="navbar-fixed">
+    <nav class="green lighten-2" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">Matomato Club</a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Видео</a></li>
+                <li><a href="#">Связь</a></li>
+            </ul>
+            &lt;!&ndash;
+            <div class="nav-wrapper right">
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </div>
+            &ndash;&gt;
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Видео</a></li>
+                <li><a href="#">Связь</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>-->
+
+<%= navbar(@conn) %>

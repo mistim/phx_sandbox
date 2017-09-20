@@ -1,0 +1,9 @@
+<div id="social-block" class="red lighten-2">
+  <div class="container">
+    <div class="row">
+      <div class="col l12 s12 center">
+        <a href=# class="btn-flat white-text no-uppercase">Наш <span class="fw-600">YouTube</span> канал</a>
+      </div>
+    </div>
+  </div>
+</div>
